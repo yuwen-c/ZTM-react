@@ -1,0 +1,39 @@
+
+
+# the birth of react.js:
+1. 以往的網路運作模式：server傳三種檔案
+2. 但由於各個瀏覽器處理js的結果不同，Jquery幫大家解決這個問題，只要用他的API就好。
+3. 大家的website越做越大，開始不敷使用，出現一種叫backboneJS的技術
+4. 另外由於處理DOM的技術越來越好，開始流行SPA，也就是Server一開始給檔案，不過JS占的分量越來越重，html變小，只要ajax去處理頁面變化，不需要一直跟server要檔案。
+5. Google推出AngularJS，也就是MVC，把各個種類的JS分門別類歸類好，很紅。
+6. 但隨著app越來越複雜，資料牽動互相影響，MVC的架構不可行，data flows everywhere。2013臉書推出react。
+7. Google在2014也重新改寫出angular，但中間那段時間已經很多人跳到react。
+
+# core concepts:
+
+## declarative, not imperative
+- traditional technics, use javascript manipulates the DOM directly -> impertative style.
+- repainting, and recalculaing are expensive for browser.
+- in react, we tell react how our app should look like without touchiing the DOM, React does this for us. -> declarative way.
+
+## build website like lego blocks
+- components are just javascript functions.
+- reusable.
+
+## one way data flow
+- state and components build virtual-DOM, react depends on this virtual-DOM, update th eactual DOM
+- DOM can be only controled by state change.
+- the restriction allows us debug easily.
+
+## UI library
+- unlike angularjs is a complete framework, react is more flexible and can be used in varias situation like AR, mobile app, terminal...
+
+# What should a react developer do?
+- decide how much should we break down a component
+- decide where should we put the state, and how it looks like?
+- decide when a state changes, what part of virtual DOM should also change? - related to performance.
+
+
+
+
+
